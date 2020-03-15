@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/textViewId"
+            android:layout_width="66dp"
+            android:layout_height="81dp"
+            android:text="Id"
+            android:paddingLeft="-15dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:text="Name"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:text="Email"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/textViewAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:text="Alamat"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
