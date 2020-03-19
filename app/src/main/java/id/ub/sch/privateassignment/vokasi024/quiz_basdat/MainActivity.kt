@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         viewRecord()
+
+        val intentObject = intent
+        val header = intentObject.getStringExtra("EMAIL")
+        headerUser.text = "$header"
     }
 
     // fungsi untuk membaca data dari database dan menampilkannya dari listview
@@ -38,10 +42,10 @@ class MainActivity : AppCompatActivity() {
 
         // setiap data yang didapatkan dari database akan dimasukkan ke array
         for(e in emp){
-            empArrayId[index] = e.userId.toString()
-            empArrayName[index] = e.userName
-            empArrayEmail[index] = e.userEmail
-            empArrayAlamat[index] = e.userAlamat
+            empArrayId[index] = e.empId.toString()
+            empArrayName[index] = e.empName
+            empArrayEmail[index] = e.empEmail
+            empArrayAlamat[index] = e.empAlamat
             index++
         }
 
